@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web App</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/register.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="./assets/images/img 2.jpg">
+            <nav>
+                <a href="./landing.html"><strong>Home</strong></a>
+                <a href="./jobs.html"> <strong>Available Jobs</strong></a>
+                <a href="./post.html"><strong>Post Jobs</strong></a>
+                <a href="./login.html"><strong>Sign In</strong></a>
+                <a href="./register.html"><strong>Create an Account</strong></a>
+                <a href="./dashbord.html"><strong>Dashboard</strong></a>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="registrationForm">
+            <label for="name">Name*:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            
+            <label for="email">Email*:</label>
+            <input type="email" id="email" name="email" placeholder="e-Mail" required>
+            
+            <label for="phone">Phone Number*:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Tel-Number" required>
+            
+            <label for="dob">Date of Birth*:</label>
+            <input type="date" id="dob" name="dob" placeholder="mm/dd/yyyy" required>
+            
+            <label for="status">Are you a Fresher or Working Professional:</label>
+            <select id="status" name="status" required>
+                <option value="">Select</option>
+                <option value="fresher">Fresher</option>
+                <option value="professional">Working Professional</option>
+            </select>
+            
+            <label for="resume">Resume*:(Optional)</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+            
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I accept the <a href="#">terms and conditions</a></label>
+            </div>
+            
+            <button type="submit" class="button" onclick="checkAge()">Register</button>
+        </form>
+    </div>
+    
+
+    
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Email id: </strong>halfdozenncrew@gmail.com</p>
+            <p><strong>Phone:</strong> +91 8125768807</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>   
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Post Job</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">Register</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="./assets/images/app.jpg" alt="">
+                <img src="./assets/images/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="./assets/images/pay.png" alt="">
+        </div>
+        <!--<div class="copyright">
+            <p>&copy; 2024 , Ava etc - Online Ecommerce Store</p>
+        </div>-->
+    </footer>
+
+
+    <script src="./assets/js/register.js"></script>
+
+</body>
+</html>

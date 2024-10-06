@@ -365,7 +365,7 @@ function writeUsers(users) {
 
 // Routes
 app.get('/', (req, res) => {
-  res.render('landing', { title: 'Home' });
+  res.render('index', { title: 'Home' });
 });
 
 app.get('/login', (req, res) => {
